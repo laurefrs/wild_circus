@@ -3,15 +3,15 @@
 {% block title %}Artists index{% endblock %}
 
 {% block body %}
-    <h1>Artists index</h1>
+    <h1>Liste des artistes</h1>
 
     <table class="table">
         <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Picture</th>
+            <th>Nom</th>
+            <th>Categorie</th>
+            <th>Image</th>
             <th>Description</th>
         </tr>
         </thead>
@@ -21,14 +21,12 @@
                 <td>{{ artist.id }}</td>
                 <td>{{ artist.name }}</td>
                 <td>{{ artist.category.id }}</td>
+                <td><img src="{{ artist.picture }}" alt="pic"></td>
                 <td>{{ artist.description }}</td>
-                <td>{{ artist.picture }}</td>
-                <td>
-                </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="4">Aucun artiste trouvé</td>
             </tr>
         {% endfor %}
         </tbody>

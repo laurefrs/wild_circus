@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: laure
  * Date: 2019-07-16
- * Time: 15:16
+ * Time: 17:27
  */
 
 namespace App\Controller;
@@ -13,14 +13,17 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeController extends AbstractController
+class ArtistController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/artists", name="allArtists")
      */
-    public function index()
+    public function index(ArtistRepository $artistRepository):Response
     {
-        return $this->render('base.html.twig');
+        $artists = $artistRepository->findAll();
+        return $this->render('artists.html.twig',
+            ['artists'=> $artists]
+        );
 
     }
 }
