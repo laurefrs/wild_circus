@@ -9,6 +9,8 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
+    .copyFiles({from: './yarn add sass-loader@^7.0.1 node-sass --dev',})
+    .copyFiles({from: 'assets/img/',})
     // public path used by the web server to access the output path
     .setPublicPath('/build')
     // only needed for CDN's or sub-directory deploy
@@ -53,8 +55,8 @@ Encore
         corejs: 3
     })
 
-    // enables Sass/SCSS support
-    //.enableSassLoader()
+     //enables Sass/SCSS support
+    .enableSassLoader();
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
