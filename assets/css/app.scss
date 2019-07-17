@@ -1,4 +1,6 @@
 @import "vars";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
 
 body {
     background-image: url("https://i.ytimg.com/vi/CQphcMNUtUo/maxresdefault.jpg");
@@ -97,4 +99,12 @@ a:hover {
     border-radius: 50%;
     background-color: #f1f1f1;
     color: black;
+}
+
+footer{
+    background-color: orange;
+    height: 50px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

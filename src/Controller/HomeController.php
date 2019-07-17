@@ -8,10 +8,10 @@
 
 namespace App\Controller;
 
-use App\Repository\ArtistRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Repository\ImageRepository;
 
 class HomeController extends AbstractController
 {
@@ -22,5 +22,15 @@ class HomeController extends AbstractController
     {
         return $this->render('layout/base.html.twig');
 
+    }
+    /**
+     * @Route("/galerie", name="galerie")
+     */
+    public function galleryShow(ImageRepository $imageRepository) : Response
+    {
+        $images = $imageRepository->findAll();
+        return $this->render('gallery.html.twig',
+            ['images'=> $images]
+        );
     }
 }

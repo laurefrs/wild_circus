@@ -1,0 +1,17 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block body %}
+<section class=" galerie">
+    <h2 class="titre-crush">Découvrez un avant-goût de notre spectacle!</h2>
+
+    <div class="carouselGalerie">
+        {% for image in images %}
+            <div class="carouselGalerie">
+                <a href="{{ path('galerie',{'title': image.title})}}">
+                    <img src="{{ image.adress}}" alt="{{ image.title }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
