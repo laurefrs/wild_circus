@@ -7,7 +7,7 @@ const $ = require('jquery');
 $(document).ready(function () {
     $('.carouselGalerie').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 2,
     });
 });
