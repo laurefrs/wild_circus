@@ -18,7 +18,7 @@ h2,h1,td,tr {
 .navbar {
     overflow: hidden;
     background-color: orange;
-    font-family: "Bungee Shade";
+    font-family: $typography-1;
     top: 0;
     padding: 10px 0;
   opacity: 0.8;
@@ -32,6 +32,7 @@ h2,h1,td,tr {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
 
 
@@ -107,12 +108,14 @@ a:hover {
 
 footer{
     background-color: orange;
-    height: 50px;
-    margin-top: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    opacity: 0.8;
     position: relative;
-    top: 560px;
+    top: 584px;
+    font-family: $typography-1;
+    width:100%;
+    padding: 3px 0 3px 0;
+
+
 }
 .logo{
     width: 450px;
@@ -120,4 +123,8 @@ footer{
     left: 450px;
     top: 170px;
     opacity: 0.6;
+}
+
+.newsletter{
+  width: 35%;
 }
