@@ -9,19 +9,20 @@
     </head>
 
     <body>
-    <header>
-        {% include 'layout/navbar.html.twig' %}
-    </header>
+        <header>
+            {% include 'layout/navbar.html.twig' %}
+        </header>
+
+            <img class="logo" src="{{ ('build/images/logo.png') }}" alt="">
+
+            {% block content %}{% endblock %}
+
+            {% include 'layout/footer.html.twig' %}
 
 
-    {% block content %}{% endblock %}
-
-    {% include 'layout/footer.html.twig' %}
-
-
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
+            {% block javascripts %}
+                {{ encore_entry_script_tags('app') }}
+            {% endblock %}
 
     </body>
 </html>

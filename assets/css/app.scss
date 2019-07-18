@@ -20,7 +20,9 @@ h2,h1,td,tr {
     background-color: orange;
     font-family: "Bungee Shade";
     top: 0;
-}
+    padding: 10px 0;
+  opacity: 0.8;
+  }
 
 /* Links inside the navbar */
 .navbar a {
@@ -31,6 +33,7 @@ h2,h1,td,tr {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 
 /* The dropdown container */
 .dropdown {
@@ -52,7 +55,8 @@ h2,h1,td,tr {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: whitesmoke;
+    color: black;
 }
 
 /* Dropdown content (hidden by default) */
@@ -107,4 +111,13 @@ footer{
     margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
+    top: 560px;
+}
+.logo{
+    width: 450px;
+    position: absolute;
+    left: 450px;
+    top: 170px;
+    opacity: 0.6;
 }
