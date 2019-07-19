@@ -33,4 +33,12 @@ class HomeController extends AbstractController
             ['images'=> $images]
         );
     }
+    /**
+     * @Route("/tarifs", name="tarifs")
+     */
+    public function rates()
+    {
+        return $this->render('tarif.html.twig');
+
+    }
 }

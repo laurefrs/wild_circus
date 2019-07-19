@@ -2,6 +2,8 @@
 @import "~slick-carousel/slick/slick";
 @import "~slick-carousel/slick/slick-theme";
 @import "~leaflet";
+
+
 body {
     background-image: url("https://i.ytimg.com/vi/CQphcMNUtUo/maxresdefault.jpg");
     background-repeat: no-repeat;
@@ -10,8 +12,11 @@ body {
     background-size: 100%;
     color: white;
 }
+
 h2,h1,td,tr {
     color:white;
+    font-family: $typography-1;
+    font-size: 28px;
 }
 
 /* Navbar container */
@@ -120,7 +125,7 @@ footer{
 .logo{
     width: 450px;
     position: absolute;
-    left: 450px;
+    left: 500px;
     top: 170px;
     opacity: 0.6;
 }
@@ -135,14 +140,21 @@ footer{
 }
 .formulaire{
     width: 350px;
+    font-family: $typography-1;
+    font-size: 10px;
 }
 #map{
     height:400px;
     width: 500px;
     margin-top: 50px;
-    margin-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
     bottom: 177px;
     left:60%;
+}
+
+.progress{
+    font-size: 35px;
+    font-family: $typography-1;
+    margin-right: 50%;
 }
