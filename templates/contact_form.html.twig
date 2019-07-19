@@ -4,7 +4,7 @@
 
 {% block content %}
 
-    <div>
+    <div class="formulaire">
         {{ form_start(form) }}
         {{ form_widget(form) }}
 
@@ -12,5 +12,7 @@
 
         {{ form_end(form) }}
     </div>
+
+    <div class=" carte" id="map"></div>
 
 {% endblock %}
