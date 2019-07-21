@@ -20,7 +20,7 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->render('layout/base.html.twig');
+        return $this->render('home.html.twig');
 
     }
     /**

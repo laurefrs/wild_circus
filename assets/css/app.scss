@@ -115,10 +115,11 @@ footer{
     background-color: orange;
     opacity: 0.8;
     position: relative;
-    top: 584px;
+    top: 635px;
     font-family: $typography-1;
     width:100%;
     padding: 3px 0 3px 0;
+    height: 60px;
 
 
 }
@@ -157,4 +158,14 @@ footer{
     font-size: 35px;
     font-family: $typography-1;
     margin-right: 50%;
+}
+td img {
+    z-index: 0;
+}
+
+.welcoming{
+    position: relative;
+    left: 43%;
+    font-size:30px;
+
 }
